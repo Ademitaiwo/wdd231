@@ -131,6 +131,10 @@ h2 {
     color: var(--secondary-color);
 }
 
+
+
+
+
 /* Course Cards */
 .filter-buttons {
     margin-bottom: 1.5rem;
@@ -189,6 +193,29 @@ h2 {
 .course-card h4 {
     color: var(--secondary-color);
     margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.course-meta {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tech-tag {
+    background: var(--secondary-color);
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
     font-weight: 500;
 }
 
