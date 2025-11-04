@@ -119,7 +119,7 @@ function displayCourses(coursesToShow) {
 // Update total credits
 function updateTotalCredits(coursesToCount) {
     const total = coursesToCount.reduce((sum, course) => sum + course.credits, 0);
-    totalCredits.textContent = `Total Credit of the course: ${total}`;
+    totalCredits.textContent = `Total Credit of the courses: ${total}`;
 }
 
 // Event Listeners
