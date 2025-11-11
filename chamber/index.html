@@ -1,0 +1,81 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibadan Chamber of Commerce | Business Directory</title>
+    <meta name="description"
+        content="Explore local businesses and connect with professionals in the Ibadan Chamber of Commerce directory.">
+    <meta name="author" content="Taiwo Owolabi">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Normalize CSS (for consistent styling) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Your custom styles -->
+    <link rel="stylesheet" href="styles/directory.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.png" alt="Chamber Logo" class="logo">
+        <h1>Ibadan Chamber of Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/ibadan-city.jpg" alt="Ibadan city view">
+            <div class="hero-text">
+                <h2>Welcome to the Ibadan Chamber of Commerce</h2>
+                <p>Empowering businesses, fostering community, and driving growth.</p>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </section>
+
+        <!-- Current Events -->
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li><strong>Business Networking Night</strong> – Nov 25, 2025</li>
+                <li><strong>Trade & Investment Summit</strong> – Dec 10, 2025</li>
+            </ul>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Local Weather</h2>
+            <div id="current-weather">
+                <p><strong>Temperature:</strong> <span id="temp"></span>°C</p>
+                <p><strong>Conditions:</strong> <span id="description"></span></p>
+            </div>
+            <div id="forecast">
+                <h3>3-Day Forecast</h3>
+                <ul id="forecast-list"></ul>
+            </div>
+        </section>
+
+        <!-- Company Spotlights -->
+        <section class="spotlights">
+            <h2>Business Spotlights</h2>
+            <div id="spotlight-container" class="spotlight-grid">
+                <!-- Spotlight cards will be injected here by JS -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ibadan Chamber of Commerce</p>
+        <p>WDD 231 | OWOLABI TAIWO ADEDEJI</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>

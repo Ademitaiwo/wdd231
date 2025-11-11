@@ -231,48 +231,39 @@ h2 {
     font-weight: 500;
 }
 
-#total-credits {
-  text-align: center;
-  font-weight: bold;
-  margin: 2rem 0;
-  font-size: 1.1rem;
+.total-credits {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-top: 1rem;
+    text-align: right;
 }
-
 
 /* Footer */
 footer {
     margin-top: 3rem;
     padding: 2rem 0;
     border-top: 1px solid var(--gray);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    gap: 0.5rem;
 }
 
-/* Make the social icons appear on one line, centered */
 .social-links {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
-.social-links a img {
-    width: 28px;
-    height: 28px;
-    transition: transform 0.3s ease;
+.social-links a {
+    color: var(--primary-color);
+    transition: color 0.2s ease;
 }
 
-.social-links a img:hover {
-    transform: scale(1.2);
+.social-links a:hover {
+    color: var(--secondary-color);
 }
 
 footer p {
-    margin: 0;
+    margin-bottom: 0.5rem;
     color: var(--text-color);
 }
 
@@ -280,86 +271,4 @@ footer p {
     font-size: 0.875rem;
     color: var(--text-color);
     opacity: 0.8;
-}
-
-/* Layout for About + Photo (welcome section) */
-.welcome-section {
-    display: flex;
-    gap: 1.5rem;
-    align-items: flex-start;
-    /* align top edges */
-    margin: 1.5rem 0;
-}
-
-/* Left column: course intro */
-.course-intro {
-    flex: 2;
-    /* wider column */
-    background: #f7f7f7;
-    padding: 1.1rem;
-    border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
-    color: #222;
-}
-
-.course-intro h2 {
-    margin-top: 0;
-    margin-bottom: 0.6rem;
-    font-size: 1.25rem;
-}
-
-/* Right column: student photo */
-.instructor-info {
-    flex: 1;
-    /* narrower column */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* center the photo and caption */
-    gap: 0.6rem;
-}
-
-.instructor-info h2 {
-    margin: 0;
-    font-size: 1rem;
-    text-align: center;
-}
-
-.instructor-info img {
-    display: block;
-    width: 150px;
-    /* fixed visual size to match your markup */
-    height: 180px;
-    /* keep same aspect as provided */
-    object-fit: cover;
-    /* crop neatly if image aspect differs */
-    border-radius: 8px;
-    /* soft rounded corners */
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
-    border: 4px solid #ffffff;
-    /* small white frame */
-    background: #e6e6e6;
-    /* fallback grey background while loading */
-}
-
-/* Utility to flip sides without changing HTML */
-.welcome-section.reverse {
-    flex-direction: row-reverse;
-}
-
-/* Small screens: stack vertically and scale image */
-@media (max-width: 700px) {
-    .welcome-section {
-        flex-direction: column;
-    }
-
-    .instructor-info {
-        align-items: flex-start;
-        /* align to left on small screens for reading */
-    }
-
-    .instructor-info img {
-        width: 120px;
-        height: 160px;
-    }
 }

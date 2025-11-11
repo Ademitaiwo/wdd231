@@ -134,6 +134,19 @@ footer {
     margin-top: 2rem;
 }
 
+
+.spotlight-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .spotlight-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 700px) {
     #menu-toggle {
         display: block;
