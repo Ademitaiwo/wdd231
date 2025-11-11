@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "OluTech Innovations",
+            "address": "12 Ring Road, Ibadan",
+            "phone": "+234 801 234 5678",
+            "website": "https://olutech.com",
+            "image": "olutech.png",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "Adire Fashion House",
+            "address": "4 Bodija Market Road, Ibadan",
+            "phone": "+234 808 123 9876",
+            "website": "https://adirehouse.com",
+            "image": "fashion-house.jpg",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "Green Market Groceries",
+            "address": "Dugbe Main Street, Ibadan",
+            "phone": "+234 809 567 4321",
+            "website": "https://greenmarket.com",
+            "image": "green-market.jpg",
+            "membershipLevel": "Member"
+        },
+        {
+            "name": "Bright Future Academy",
+            "address": "Orita Challenge, Ibadan",
+            "phone": "+234 805 333 1111",
+            "website": "https://brightfuture.edu.ng",
+            "image": "bright-fuction.jpg",
+            "membershipLevel": "Gold"
+        },
+        {
+            "name": "TechNest Hub",
+            "address": "Awolowo Ave, Ibadan",
+            "phone": "+234 806 888 2233",
+            "website": "https://technesthub.com",
+            "image": "techhub.jpg",
+            "membershipLevel": "Silver"
+        },
+        {
+            "name": "NaijaPrint Studios",
+            "address": "Eleyele Road, Ibadan",
+            "phone": "+234 803 111 4455",
+            "website": "https://naijaprint.com",
+            "image": "naijarint-studios.jpg",
+            "membershipLevel": "Member"
+        },
+        {
+            "name": "Ibadan Solar Power Ltd",
+            "address": "Agodi Gate, Ibadan",
+            "phone": "+234 802 222 7788",
+            "website": "https://ibadansolar.com",
+            "image": "ibadan-solar.jpg",
+            "membershipLevel": "Gold"
+        }
+    ]
+}
