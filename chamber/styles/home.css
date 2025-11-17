@@ -24,6 +24,7 @@ header {
     gap: .5rem;
     font-size: 1.2rem;
     font-weight: 600;
+   
 }
 
 /* ---------------- NAVIGATION ---------------- */
@@ -60,7 +61,7 @@ nav.show {
 
 /* ---------------- HERO ---------------- */
 .hero {
-    background: white;
+    background: rgb(255, 255, 255);
     padding: 2rem 1rem;
     display: flex;
     flex-direction: column-reverse;
@@ -88,6 +89,7 @@ nav.show {
 .hero-img img {
     width: 100%;
     max-width: 350px;
+    border-radius: 10px;
 }
 
 /* ---------------- DATA SECTIONS ---------------- */
@@ -126,6 +128,7 @@ nav.show {
     margin: 1.5rem 0;
 }
 
+
 /* Each card */
 .member-card {
     flex: 1;
@@ -137,6 +140,11 @@ nav.show {
     padding: 0.9rem;
     border-radius: 8px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* Make the first card twice as wide as the others */
+.member-card:first-child {
+    flex: 2;
 }
 
 /* Left image */
