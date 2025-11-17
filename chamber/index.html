@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,75 +10,134 @@
     <meta name="author" content="Taiwo Owolabi">
     <link rel="icon" type="image/png" href="images/favicon.png">
 
-    <!-- Normalize CSS (for consistent styling) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Facebook Open Graph Meta -->
+    <meta property="og:title" content="Ibadan Chamber of Commerce">
+    <meta property="og:description" content="Connecting businesses and promoting economic growth in Ibadan.">
+    <meta property="og:image" content="https://ademitaiwo.github.io/wdd231/chamber/images/chamber-preview.jpg">
+    <meta property="og:url" content="https://ademitaiwo.github.io/wdd231/chamber/directory.html">
 
-    <!-- Your custom styles -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="styles/directory.css">
+    <script src="scripts/directory.js" defer></script>
+    <link rel="stylesheet" href="styles/home.css">
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img src="images/logo.png" alt="Chamber Logo" class="logo">
-        <h1>Ibadan Chamber of Commerce</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-grid">
+            <div class="logo">
+                <img src="images/logo.png" alt="Chamber logo" width="30" height="30">
+                <span>Igando Chamber of Commerce</span>
+            </div>
+            <button id="ham-btn" class="hamburger" aria-label="navigation button"></button>
+        </div>
+
+        <div class="grid2">
+            <nav id="navMenu">
+                <ul class="nav-list">
+                    <li id="nav-object"><a href="index.html">Home</a></li>
+                    <li id="nav-object-sec"><a href="directory.html">Directory</a></li>
+                    <li id="nav-object-third"><a href="#">Join</a></li>
+                    <li id="nav-object-fourth"><a href="#">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <img src="images/ibadan-city.jpg" alt="Ibadan city view">
+        <div class="hero">
             <div class="hero-text">
-                <h2>Welcome to the Ibadan Chamber of Commerce</h2>
-                <p>Empowering businesses, fostering community, and driving growth.</p>
-                <a href="join.html" class="cta-button">Join the Chamber</a>
+                <h1>Welcome to the Igando Chamber of Commerce</h1>
+                <p>Empowering local businesses and driving community growth through partnership and innovation.</p>
+                <a href="#" id="join-us">Join us</a>
+            </div>
+
+            <div class="hero-img">
+                <img src="images/hero.svg" alt="hero image" class="heroImage">
+            </div>
+
+        </div>
+
+        <h2 id="wayfinder">Home</h2>
+
+        <section class="realData">
+            <div class="realDataGrid">
+                <div class="events">
+                    <h2>Events</h2>
+                    <div class="eventContent1">
+                        <h3>Business Networking Breakfast</h3>
+                        <p>Join local entrepreneurs and professionals for a morning of networking and collaboration.
+                            <br><strong>Date:</strong> November 10, 2025 | <strong>Venue:</strong> Igando Civic Hall
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="currentWeather">
+                    <h3>Current Weather</h3>
+                    <figure>
+                        <img id="weather-icon" alt="weather icon">
+                        <figcaption id="captionDesc"></figcaption>
+                    </figure>
+                    <p><span id="currentTemp"></span> °F</p>
+                    <p><span id="weatherDescription"></span></p>
+
+                    <p>High: <span id="high"></span> °F</p>
+                    <p>Low: <span id="low"></span> °F</p>
+                    <p>Humidity: <span id="humidity"></span>%</p>
+                    <p>Sunrise: <span id="sunrise"></span></p>
+                    <p>Sunset: <span id="sunset"></span></p>
+
+                </div>
+
+                <div class="weatherForecast">
+                    <h3>Weather Forecast</h3>
+                    <p><span id="day1"></span>: <span id="todayForecast"></span> °F</p>
+                    <p><span id="day2"></span>: <span id="tomorrowForecast"></span> °F</p>
+                    <p><span id="day3"></span>: <span id="dayAfterForecast"></span> °F</p>
+                </div>
+
             </div>
         </section>
 
-        <!-- Current Events -->
-        <section class="events">
-            <h2>Upcoming Events</h2>
-            <ul>
-                <li><strong>Business Networking Night</strong> – Nov 25, 2025</li>
-                <li><strong>Trade & Investment Summit</strong> – Dec 10, 2025</li>
-            </ul>
-        </section>
+        <section class="spotlight">
+            <h3>Top Members</h3>
+            <div id="spotlightGrid">
 
-        <!-- Weather Section -->
-        <section class="weather">
-            <h2>Local Weather</h2>
-            <div id="current-weather">
-                <p><strong>Temperature:</strong> <span id="temp"></span>°C</p>
-                <p><strong>Conditions:</strong> <span id="description"></span></p>
-            </div>
-            <div id="forecast">
-                <h3>3-Day Forecast</h3>
-                <ul id="forecast-list"></ul>
-            </div>
-        </section>
-
-        <!-- Company Spotlights -->
-        <section class="spotlights">
-            <h2>Business Spotlights</h2>
-            <div id="spotlight-container" class="spotlight-grid">
-                <!-- Spotlight cards will be injected here by JS -->
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Ibadan Chamber of Commerce</p>
-        <p>WDD 231 | OWOLABI TAIWO ADEDEJI</p>
-        <p>Last Modified: <span id="lastModified"></span></p>
+        <div class="footerGrid">
+            <div id="footer1">
+                <p>Igando Chamber of Commerce</p>
+                <p>50 Lifeway Avenue, Igando, Mail 788</p>
+                <p>info@igandocc.org</p>
+                <p>(234) 8123456789</p>
+            </div>
+            <div id="footer2">
+                <img src="images/youtube.svg" alt="youtube logo" width="30" height="30">
+                <img src="images/twitter.svg" alt="twitter logo" width="30" height="30">
+                <img src="images/linkedin.svg" alt="linkedIn logo" width="30" height="30">
+            </div>
+            <div id="footer3">
+                <p>WDD231 Class Project</p>
+                <p>Owolabi Taiwo</p>
+                <p>©️<span id="currentyear"></span> Igando Chamber of Commerce</p>
+                <p>Last Modification: <span id=lastModified></span></p>
+            </div>
+        </div>
     </footer>
-
 </body>
 
 </html>

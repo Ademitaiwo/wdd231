@@ -1,0 +1,186 @@
+/* ---------------- GLOBAL ---------------- */
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    color: #222;
+}
+
+header {
+    background: #0b2e59;
+    color: white;
+    padding: 1rem;
+}
+
+.header-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* ---------------- NAVIGATION ---------------- */
+nav {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 1rem 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.hamburger {
+    width: 35px;
+    height: 35px;
+    background: url("../images/menu.svg") center/contain no-repeat;
+    border: none;
+}
+
+/* Show menu when active */
+nav.show {
+    display: block;
+}
+
+/* ---------------- HERO ---------------- */
+.hero {
+    background: white;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
+}
+
+.hero-text p {
+    margin-bottom: 1rem;
+}
+
+#join-us {
+    background: #0078ff;
+    padding: .7rem 1.2rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero-img img {
+    width: 100%;
+    max-width: 350px;
+}
+
+/* ---------------- DATA SECTIONS ---------------- */
+.realData {
+    padding: 1rem;
+}
+
+.realDataGrid {
+    display: grid;
+    gap: 1rem;
+}
+
+.events,
+.currentWeather,
+.weatherForecast {
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* ---------------- SPOTLIGHTS ---------------- */
+.spotlight {
+    background: white;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+#spotlightGrid {
+    display: grid;
+    gap: 1rem;
+}
+
+.spot-card {
+    background: #eef6ff;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.spot-card img {
+    width: 100px;
+    height: auto;
+}
+
+/* ---------------- FOOTER ---------------- */
+footer {
+    background: #0b2e59;
+    color: white;
+    padding: 1rem;
+}
+
+.footerGrid {
+    display: grid;
+    gap: 1rem;
+}
+
+footer img {
+    margin-right: .5rem;
+}
+
+/* ---------------- DESKTOP VIEW ---------------- */
+@media (min-width: 768px) {
+
+    nav {
+        display: block !important;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .hero {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    .realDataGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #spotlightGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footerGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
