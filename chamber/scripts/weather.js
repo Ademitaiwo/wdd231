@@ -7,6 +7,14 @@ const lastModified = document.querySelector("#lastModified");
 lastModified.textContent = document.lastModified;
 
 
+const menuToggle = document.querySelector("#menu-toggle");
+const navMenu = document.querySelector("#nav-menu");
+
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("show");
+});
+
+
 // scripts/weather.js
 // Replace YOUR_API_KEY with your valid OpenWeather key if you want to change it.
 // Current coordinates match your original code.
