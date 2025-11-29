@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn dialog pop in wen designe</title>
+</head>
+<body>
+    <style>
+            dialog {
+            width: 300px;
+            height: 200px;
+            border: 2px solid #706c6c;
+            padding: 20px;
+            background-color: #f3f1f1;
+            position: fixed;
+            top: 30%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+        }
+
+        button {
+            background-color: #515353;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+    </style>
+    <main>
+        <h1>Simple dialog button here</h1>
+        <button id="openDialog1">Apple</button>
+        <button id="openDialog2">Orange</button>
+        <button id="openDialog3">Pawpaw</button>
+        <dialog id="dialog">
+            <div></div>
+            <button id="closeDialog">Close</button>
+        </dialog>
+        <script>
+            const dialog = document.querySelector('#dialog');
+            const closeDialog = document.querySelector('#closeDialog');
+            const dialogBoxText = document.querySelector('#dialog div');
+
+            // Buttons
+            const openDialog1 = document.querySelector('#openDialog1');
+            const openDialog2 = document.querySelector('#openDialog2');
+            const openDialog3 = document.querySelector('#openDialog3');
+
+            // Apple
+            openDialog1.addEventListener('click', () => {
+                dialog.show();
+                dialogBoxText.innerHTML =
+                    'For those who prefer to watch and learn, you have a video lab on modal dialogs. The first video covers building a single modal. The second video builds on the first and shows you how to reuse a dialog for multiple popups.';
+            });
+
+            // Orange
+            openDialog2.addEventListener('click', () => {
+                dialog.show();
+                dialogBoxText.innerHTML = 'The CSS selector :modal will not work because :modal is not a supported CSS pseudo-class. It is recommended that you style the dialog or you can assign an id or class to the dialog and use that selector.';
+            });
+
+            // Pawpaw
+            openDialog3.addEventListener('click', () => {
+                dialog.show();
+                dialogBoxText.innerHTML = 'The CSS selector :modal will not work because :modal is not a supported CSS pseudo-class.It is recommended that you style the dialog or you can assign an id or class to the dialog and use that selector.';
+            });
+
+            // Close
+            closeDialog.addEventListener('click', () => {
+                dialog.close();
+            });
+        </script>
+
+    </main>
+</body>
+</html>
