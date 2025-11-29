@@ -71,23 +71,6 @@
         </div>
     </footer>
 
-    <!-- ✅ Required JavaScript to display form data -->
-    <script>
-        const params = new URLSearchParams(window.location.search);
-
-        document.querySelector("#results").innerHTML = `
-            <p><strong>First Name:</strong> ${params.get("first")}</p>
-            <p><strong>Last Name:</strong> ${params.get("last")}</p>
-            <p><strong>Organizational Title:</strong> ${params.get("orgTitle")}</p>
-            <p><strong>Email:</strong> ${params.get("email")}</p>
-            <p><strong>Phone:</strong> ${params.get("phone")}</p>
-            <p><strong>Business:</strong> ${params.get("business")}</p>
-            <p><strong>Membership Level:</strong> ${params.get("membership")}</p>
-            <p><strong>Description:</strong> ${params.get("description")}</p>
-            <p><strong>Timestamp:</strong> ${params.get("timestamp")}</p>
-        `;
-    </script>
-
 </body>
 
 </html>
