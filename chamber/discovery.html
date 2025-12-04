@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Join Our Chamber</title>
+  <title>Ibadan Chamber | Discover</title>
   <meta name="description"
     content="Explore local businesses and connect with professionals in the Ibadan Chamber of Commerce directory.">
   <meta name="author" content="Taiwo Owolabi">
@@ -31,6 +31,8 @@
   <script src="scripts/spotlights.js" defer></script>
   <script src="scripts/join.js" defer></script>
   <link rel="stylesheet" href="styles/join.css">
+  <link rel="stylesheet" href="styles/discover.css">
+  <link rel="stylesheet" href="styles/join.css">
   <link rel="stylesheet" href="styles/directory.css" />
 </head>
 
@@ -46,7 +48,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html" class="active">Join</a></li>
-        <li><a href="#">Discover</a></li>
+        <li><a href="discovery.html" class="active">Discover</a></li>
       </ul>
     </nav>
   </header>
@@ -68,7 +70,7 @@
 
     <!-- City Image -->
     <div class="discover-card">
-      <img src="images/ibadan.jpg" alt="Ibadan City">
+      <img src="images/nigeria-ibadan.jpeg" alt="Ibadan City">
     </div>
 
     <!-- Events -->
@@ -88,22 +90,27 @@
 
   </section>
 
-  <footer>
-    <div class="footerGrid">
-      <div>
-        <h3>Ibadan Chamber</h3>
-        <p>Building strong businesses and community connections.</p>
+    <footer>
+      <div class="footerGrid">
+        <div id="footer1">
+          <p>Ibadan Chamber of Commerce</p>
+          <p>50 Lifeway Avenue, Ibadan, Mail 788</p>
+          <p>info@igandocc.org</p>
+          <p>(234) 8123456789</p>
+        </div>
+        <div id="footer2">
+          <img src="images/youtube.png" alt="youtube logo" width="30" height="30">
+          <img src="images/twitter.png" alt="twitter logo" width="30" height="30">
+          <img src="images/linkedin.png" alt="linkedIn logo" width="30" height="30">
+        </div>
+        <div id="footer3">
+          <p>WDD231 Class Project</p>
+          <p>Owolabi Taiwo</p>
+          <p>©️<span id="currentyear"></span>Ibadan Chamber of Commerce</p>
+          <p>Last Modification: <span id=lastModified></span></p>
+        </div>
       </div>
-
-      <div>
-        <p>&copy; 2024 Ibadan Chamber</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="scripts/nav.js"></script>
-  <script src="scripts/discover.js"></script>
-
+    </footer>
 </body>
 
 </html>
