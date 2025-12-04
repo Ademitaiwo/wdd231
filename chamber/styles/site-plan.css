@@ -1,0 +1,66 @@
+/* ===============================
+   GENERAL STYLING
+================================ */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    color: #001F54;
+    margin: 0;
+    padding: 20px;
+}
+
+/* ===============================
+   HEADER
+================================ */
+header {
+    background-color: #001F54;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #001F54;
+}
+
+/* ===============================
+   SECTIONS
+================================ */
+section {
+    margin-bottom: 30px;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #001F54;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* ===============================
+   WIREFRAME IMAGES
+================================ */
+.wireframe {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin-top: 10px;
+    border: 2px solid #001F54;
+    border-radius: 6px;
+}
+
+/* ===============================
+   FOOTER
+================================ */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #001F54;
+    font-size: 14px;
+}
