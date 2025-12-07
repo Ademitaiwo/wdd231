@@ -1,66 +1,66 @@
 export const temple = [
   {
     name: "Sahara Traders Ltd",
-    address: "10 Desert Rd, Lagos",
+    address: "10 Desert Rd, Ibadan",
     phone: "800-555-1001",
     website: "https://saharatraders.com",
-    image: "member1.jpeg",
+    image: "olutech.png",
     level: "Gold"
   },
   {
     name: "Blue River Tech",
-    address: "25 River St, Lagos",
+    address: "25 River St, Ibadan",
     phone: "800-555-1002",
     website: "https://bluerivertech.com",
-    image: "download1.jpeg",
+    image: "adetechn.jpg",
     level: "Silver"
   },
   {
-    name: "Lagos Coffee",
-    address: "5 Market Ave, Lagos",
+    name: "Ibadan Coffee",
+    address: "5 Market Ave, Ibadan",
     phone: "800-555-1003",
     website: "https://clagoskola.com",
-    image: "member3.jpeg",
+    image: "greenlife.jpg",
     level: "Member"
   },
   {
     name: "Coffee",
-    address: "5 Market Ave, Lagos",
+    address: "5 Market Ave, Ibadan",
     phone: "800-555-1003",
     website: "https://bluerivertech.com",
-    image: "member2.jpeg",
+    image: "green-market.jpg",
     level: "Member"
   },
   {
     name: "Blue River Tech",
-    address: "5 Market Ave, Lagos",
+    address: "5 Market Ave, Ibadan",
     phone: "800-555-1003",
     website: "https://lagoscoffee.com",
-    image: "member3.jpeg",
+    image: "nigeria-ibadan.jpg",
     level: "Member"
   },
   {
     name: "Sahara Traders Ltd",
-    address: "5 Market Ave, Lagos",
+    address: "5 Market Ave, Ibadan",
     phone: "800-555-1003",
     website: "https://lagoscoffee.com",
-    image: "member1.jpeg",
+    image: "ibadan-city.jpg",
     level: "Member"
   },
   {
     name: "Lagos Coffee",
-    address: "5 Market Ave, Lagos",
+    address: "5 Market Ave, Ibadan",
     phone: "800-555-1003",
     website: "https://lagoscoffee.com",
-    image: "member3.jpeg",
+    image: "bright-fuction.jpg",
     level: "Member"
   },
   {
     name: "Lagos Coffee",
-    address: "5 Market Ave, Lagos",
+    address: "5 Market Ave, Ibadan",
     phone: "800-555-1003",
     website: "https://clagoskola.com",
-    image: "member2.jpeg",
+    image: "oowo.jpg",
     level: "Member"
   }
 ];

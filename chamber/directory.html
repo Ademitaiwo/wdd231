@@ -2,84 +2,74 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ibadan Chamber of Commerce | Business Directory</title>
-    <meta name="description"
-        content="Explore local businesses and connect with professionals in the Ibadan Chamber of Commerce directory.">
-    <meta name="author" content="Taiwo Owolabi">
-    <link rel="icon" type="image/png" href="images/favicon.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />.
 
-    <!-- Facebook Open Graph Meta -->
-    <meta property="og:title" content="Ibadan Chamber of Commerce">
-    <meta property="og:description" content="Connecting businesses and promoting economic growth in Ibadan.">
-    <meta property="og:image" content="https://ademitaiwo.github.io/wdd231/chamber/images/chamber-preview.jpg">
-    <meta property="og:url" content="https://ademitaiwo.github.io/wdd231/chamber/directory.html">
+  <meta name="description" content="Explore the Lagos State Chamber of Commerce directory – 
+  find verified businesses, services, and networking opportunities across Lagos." />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="author" content="VINCENT TAIYE BALOGUN" />
+  <title> Lagos Chamber of Commerce Directory</title>
 
-    <!-- Normalize CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="styles/directory.css">
-    <script src="scripts/directory.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlights.js" defer></script>
+  <!-- Facebook Meta -->
+  <meta property="og:title" content="Lagos Chamber of Commerce" />
+  <meta property="og:description" content="Explore the Lagos State Chamber of Commerce directory – 
+  find verified businesses, services, and networking opportunities across Lagos."  />
+  <meta property="og:image" content="https://github.com/vincentcentwise/wdd231/blob/main/chamber/images/favicon.ico.gif" />
+  <meta property="og:url" content="https://yourchambersite.com" />
+
+  <link rel="icon" href="images/favicon.ico.gif" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Momo+Trust+Display&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="Ibadan Chamber Logo">
-            <h2 class="header">Ibadan Chamber of Commerce</h2>
-        </div>
-        <nav>
-            <button id="menu-toggle">☰</button>
-            <ul id="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html" class="active">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Discover</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-house"
+      viewBox="0 0 16 16">
+      <path
+        d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+    </svg>
+    <h1>Lagos Chamber of Commerce</h1>
 
-    <main>
-        <h1>Business Directory</h1>
+    <nav>
+      <button id="menu-toggle">☰</button>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <div class="view-toggle">
-            <button id="grid-view">Grid View</button>
-            <button id="list-view">List View</button>
-        </div>
+  <main>
+    <section class="view-toggle">
+      <button id="grid-view" class="active">Grid View</button>
+      <button id="list-view">List View</button>
+    </section>
 
-        <div id="members" class="grid-view">
-            <!-- JavaScript will inject business cards here -->
-        </div>
-    </main>
 
-    <footer>
-        <div class="footerGrid">
-            <div id="footer1">
-                <p>Ibadan Chamber of Commerce</p>
-                <p>50 Lifeway Avenue, Ibadan, Mail 788</p>
-                <p>info@igandocc.org</p>
-                <p>(234) 8123456789</p>
-            </div>
-            <div id="footer2">
-                <img src="images/youtube.png" alt="youtube logo" width="30" height="30">
-                <img src="images/twitter.png" alt="twitter logo" width="30" height="30">
-                <img src="images/linkedin.png" alt="linkedIn logo" width="30" height="30">
-            </div>
-            <div id="footer3">
-                <p>WDD231 Class Project</p>
-                <p>Owolabi Taiwo</p>
-                <p>©️<span id="currentyear"></span>Ibadan Chamber of Commerce</p>
-                <p>Last Modification: <span id=lastModified></span></p>
-            </div>
-        </div>
-    </footer>
+
+    <section id="members-container" class="grid-view">
+      <!-- Cards inserted here dynamically with JS -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Lagos Chamber of Commerce</p>
+    <p>WDD231 Class Project | VINCENT TAIYE BALOGUN |<span id="lastModified"></span></p>
+  </footer>
+
+  <script src="scripts/scripts.js" defer></script>
+  <script src="scripts/card.js" defer></script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-import { temple } from '../data/temple.js';
+import { temple } from './temple.js';
 
 console.log(temple);
 

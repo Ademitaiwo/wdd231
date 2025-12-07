@@ -1,0 +1,59 @@
+<!-- product page content -->
+ html lang="en">
+<title>Products — Ivory & Gold</title>
+<meta name="description"
+    content="Browse Ivory & Gold product collection. Luxury soaps, serums, creams with natural ingredients." />
+<meta name="author" content="Your Name" />
+<meta property="og:title" content="Ivory & Gold — Products" />
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">Ivory & Gold</a>
+            <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">☰</button>
+            <nav id="primary-nav" class="primary-nav" data-visible="false">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Our Collection</h1>
+        <div class="controls">
+            <label for="filter">Filter by type:</label>
+            <select id="filter">
+                <option value="all">All</option>
+                <option value="serum">Serum</option>
+                <option value="cream">Cream</option>
+                <option value="soap">Soap</option>
+            </select>
+            <button id="clear-favs">Clear Favorites</button>
+        </div>
+
+        <div id="product-grid" class="grid"></div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; <span id="year2"></span> Ivory & Gold — <a href="attributions.html">Attributions</a></p>
+            <p><a href="form.html">Send us a message</a></p>
+        </div>
+    </footer>
+
+    <div id="modal-root"></div>
+
+    <script type="module" src="js/main.js"></script>
+    <script type="module">
+        import { initProducts } from './js/products.js';
+        initProducts('#product-grid');
+    </script>
+</body>
+
+</html>

@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ibadan Chamber of Commerce | discover page </title>
+    <title>Ibadan Chamber of Commerce | thankyou </title>
     <meta name="description"
-        content="Explore local businesses and connect with professionals in the Lagos Chamber of Commerce directory.">
+        content="Explore local businesses and connect with professionals in the Ibadan Chamber of Commerce directory.">
     <meta name="author" content="OWOLABI TAIWO ADEDEJI">
     <link rel="icon" type="image/png" href="images/favicon.png">
 
     <!-- Facebook Open Graph Meta -->
-    <meta property="og:title" content="ibadan Chamber of Commerce">
-    <meta property="og:description" content="Connecting businesses and promoting economic growth in Lagos.">
-    <meta property="og:image" content="https://https://github.com/vincentcentwise/wdd231/blob/main/chamber/images/member1.jpeg" >
+    <meta property="og:title" content="Ibadan Chamber of Commerce">
+    <meta property="og:description" content="Connecting businesses and promoting economic growth in Ibadan.">
+    <meta property="og:image" content="https://github.com/vincentcentwise/wdd231/blob/main/chamber/images/favicon.ico.gif" >
     <meta property="og:url" content="https://ademitaiwo.github.io/wdd231/chamber/directory.html">
 
     <!-- Google Fonts -->
@@ -23,14 +23,13 @@
 
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
-   
-    
+    <link rel="stylesheet" href="styles/directory.css">
+    <script src="scripts/directory.js" defer></script>
     <link rel="stylesheet" href="styles/home.css">
-     <link rel="stylesheet" href="styles/discover.css">
- 
-    <script src="scripts/weather.js" type="module" defer></script>
-    <script src="scripts/join.js" type="module" defer></script>
-     <script src="scripts/discover.js" type="module" defer></script>
+     <link rel="stylesheet" href="styles/join.css">
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 </head>
 
 <body>
@@ -53,27 +52,22 @@
     </nav>
   </header>
 
-  <main>
-  
-  <h1> DISCOVERY PAGE</h1>
-  <div id="showhere"></div>
-  <dialog id="mydialog">
-    <div>
-      <h2> Sample tittle</h2>
-    <button>x</button>
-    </div>
-    <p>dedicated on April 24 </p>
-  </dialog>
+<main>
+<dl>
+  <dt>First name</dt><dd id="r-first"></dd>
+  <dt>Last name</dt><dd id="r-last"></dd>
+  <dt>Email</dt><dd id="r-email"></dd>
+  <dt>Mobile</dt><dd id="r-mobile"></dd>
+  <dt>Business</dt><dd id="r-business"></dd>
+  <dt>Submitted at</dt><dd id="r-ts"></dd>
+</dl>
 
-  <!-- Visitor message (localStorage) -->
-    <div class="visitor" id="visitorMessage" aria-live="polite"></div>
-
-  </main>
-           <footer>
+<p style="margin-top:12px">If anything is incorrect, <a href="join.html">return to the form</a> and submit again.</p></main>
+<footer>
         <div class="footerGrid">
             <div id="footer1">
-                <p>Ibadan Chamber of Commerce</p>
-                <p>50 Lifeway Avenue, IBADAN, Mail 788</p>
+                <p>ibadan Chamber of Commerce</p>
+                <p>50 Lifeway Avenue, LAGOS, Mail 788</p>
                 <p>info@igandocc.org</p>
                 <p>(234) 8123456789</p>
             </div>
@@ -90,8 +84,8 @@ width="30" height="30" </svg></a>
             </div>
             <div id="footer3">
                 <p>WDD231 Class Project</p>
-                <p>OWOLABI TAIWO ADEDEJI</p>
-                <p>©️<span id="currentyear"></span>Ibadan Chamber of Commerce</p>
+                <p>OWOLABI TAIWO</p>
+                <p>©️<span id="currentyear"></span>Lagos Chamber of Commerce</p>
                 <p>Last Modification: <span id=lastModified></span></p>
             </div>
         </div>
