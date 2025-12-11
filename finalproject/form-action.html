@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Submission — Aureum Motors</title>
+    <meta name="description" content="Form submission results." />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script type="module" src="assets/js/nav.js" defer></script>
+</head>
+
+<body>
+    <main class="container">
+        <div class="result-wrap">
+            <h1>Request Received</h1>
+            <div class="result-card">
+                <p><strong>Name:</strong> <span id="res-name"></span></p>
+                <p><strong>Email:</strong> <span id="res-email"></span></p>
+                <p><strong>Vehicle:</strong> <span id="res-vehicle"></span></p>
+                <p><strong>Message:</strong></p>
+                <div class="message-box" id="res-message"></div>
+            </div>
+            <p><a class="btn ghost" href="contact.html">Back</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <footer class="site-footer">
+            <div class="footer-container">
+        
+                <div class="footer-brand">
+                    <h2>LuxDrive Motors</h2>
+                    <p>Thank you for reaching out. We will contact you shortly.</p>
+                </div>
+        
+                <nav class="footer-nav">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="vehicles.html">Vehicles</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="attributions.html">Attributions</a></li>
+                    </ul>
+                </nav>
+        
+            </div>
+        
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> LuxDrive Motors. All rights reserved.</p>
+                <p><a class="video-link" href="YOUR-VIDEO-LINK" target="_blank">View Project Demo Video</a></p>
+            </div>
+        </footer>
+        
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+
+    </footer>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        document.getElementById('res-name').textContent = params.get('name') || 'Not provided';
+        document.getElementById('res-email').textContent = params.get('email') || 'Not provided';
+        document.getElementById('res-vehicle').textContent = params.get('vehicle') || 'Not specified';
+        document.getElementById('res-message').textContent = params.get('message') || 'Not provided';
+    </script>
+</body>
+
+</html>

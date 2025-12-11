@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Aureum Motors — Home</title>
+    <meta name="description"
+        content="Aureum Motors — Luxury automotive showcase. Curated premium vehicles with high-end specs and photography." />
+    <meta name="author" content="Your Name" />
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Aureum Motors — Luxury Vehicles" />
+    <meta property="og:description" content="Explore curated premium vehicles with specs, images and details." />
+    <meta property="og:image" content="assets/images/car-01.svg" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script type="module" src="assets/js/main.js" defer></script>
+    <script type="module" src="assets/js/nav.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header container" role="banner">
+        <a class="brand" href="index.html" aria-label="Aureum Motors Home">Aureum<span class="accent">.</span></a>
+
+        <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="vehicles.html">Vehicles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-actions">
+            <button id="theme-toggle" aria-pressed="false" title="Toggle theme">🌓</button>
+            <button id="hamburger" class="hamburger" aria-controls="primary-nav" aria-expanded="false"
+                aria-label="Open menu">☰</button>
+        </div>
+    </header>
+
+    <main class="container" id="main" role="main">
+        <section class="hero">
+            <div class="hero-inner">
+                <h1>Aureum Motors — The art of automotive luxury</h1>
+                <p class="lead">A curated selection of premium vehicles. Explore model details, compare specs, and save
+                    your favorites.</p>
+                <div class="hero-ctas">
+                    <a class="btn" href="vehicles.html">Browse Vehicles</a>
+                    <a class="btn ghost" href="contact.html">Contact Sales</a>
+                </div>
+            </div>
+            <picture class="hero-image" aria-hidden="true">
+                <img src="assets/images/car-03.jpeg" alt="" width="800" height="400" loading="lazy">
+            </picture>
+        </section>
+
+        <section class="highlights" aria-labelledby="highlights-title">
+            <h2 id="highlights-title" class="sr-only">Highlights</h2>
+            <div class="cards">
+                <article class="feature">
+                    <h3>Exquisite Craftsmanship</h3>
+                    <p>Precision materials, handcrafted interiors and meticulous attention to detail.</p>
+                </article>
+                <article class="feature">
+                    <h3>Performance & Comfort</h3>
+                    <p>State-of-the-art powertrains deliver effortless performance without compromising comfort.</p>
+                </article>
+                <article class="feature">
+                    <h3>Personalized Service</h3>
+                    <p>Tailored ownership experiences and concierge-level support.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+        
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <h2>LuxDrive Motors</h2>
+                <p>Excellence in motion. Experience the future of premium vehicles.</p>
+            </div>
+
+            <nav class="footer-nav">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vehicles.html">Vehicles</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-social">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="#" aria-label="Visit our Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="Visit our YouTube">YouTube</a></li>
+                    <li><a href="#" aria-label="Visit our LinkedIn">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-info">
+                <h3>Contact</h3>
+                <p>Email: support@luxdrive.com</p>
+                <p>Phone: +1 (800) 555-0147</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> LuxDrive Motors. All rights reserved.</p>
+            <p><a class="video-link" href="YOUR-VIDEO-LINK" target="_blank">View Project Demo Video</a></p>
+        </div>
+    </footer>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+
+</body>
+
+</html>

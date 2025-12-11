@@ -1,0 +1,124 @@
+{
+    "vehicles": [
+        {
+            "id": 1,
+            "name": "Mercedes-Benz S-Class",
+            "brand": "Mercedes-Benz",
+            "price": 118000,
+            "image": "assets/images/car-01.jpg",
+            "description": "A flagship luxury sedan delivering unmatched comfort, technology, and premium craftsmanship."
+        },
+        {
+            "id": 2,
+            "name": "BMW 7 Series",
+            "brand": "BMW",
+            "price": 112000,
+            "image": "assets/images/car-02.jpg",
+            "description": "A performance-driven executive sedan known for advanced engineering and refined luxury."
+        },
+        {
+            "id": 3,
+            "name": "Audi A8",
+            "brand": "Audi",
+            "price": 104000,
+            "image": "assets/images/car-03.jpg",
+            "description": "Audi’s flagship sedan combining smooth performance, elegance, and cutting-edge innovation."
+        },
+        {
+            "id": 4,
+            "name": "Lexus LS 500",
+            "brand": "Lexus",
+            "price": 98000,
+            "image": "assets/images/car-04.jpg",
+            "description": "A premium full-size sedan offering reliability, hybrid options, and Japanese craftsmanship."
+        },
+        {
+            "id": 5,
+            "name": "Porsche Panamera",
+            "brand": "Porsche",
+            "price": 138000,
+            "image": "assets/images/car-05.jpg",
+            "description": "A luxury performance sedan blending sports car speed with comfort and practicality."
+        },
+        {
+            "id": 6,
+            "name": "Range Rover Autobiography",
+            "brand": "Land Rover",
+            "price": 160000,
+            "image": "assets/images/car-06.jpg",
+            "description": "Luxury SUV royalty, known for its capability, elegance, and iconic British style."
+        },
+        {
+            "id": 7,
+            "name": "Bentley Continental GT",
+            "brand": "Bentley",
+            "price": 250000,
+            "image": "assets/images/car-07.jpg",
+            "description": "A handcrafted grand tourer offering extreme comfort and exhilarating performance."
+        },
+        {
+            "id": 8,
+            "name": "Rolls-Royce Ghost",
+            "brand": "Rolls-Royce",
+            "price": 340000,
+            "image": "assets/images/car-08.jpg",
+            "description": "The essence of pure luxury, delivering an unmatched smooth ride and supreme craftsmanship."
+        },
+        {
+            "id": 9,
+            "name": "Tesla Model S Plaid",
+            "brand": "Tesla",
+            "price": 96000,
+            "image": "assets/images/car-09.jpg",
+            "description": "The world’s fastest electric sedan, combining cutting-edge technology with futuristic styling."
+        },
+        {
+            "id": 10,
+            "name": "Cadillac Escalade",
+            "brand": "Cadillac",
+            "price": 92000,
+            "image": "assets/images/car-10.jpg",
+            "description": "A premium full-size SUV with commanding presence, advanced tech, and luxurious comfort."
+        },
+        {
+            "id": 11,
+            "name": "BMW X7",
+            "brand": "BMW",
+            "price": 102000,
+            "image": "assets/images/car-11.jpg",
+            "description": "A luxury 3-row SUV combining performance, elegance, and cutting-edge features."
+        },
+        {
+            "id": 12,
+            "name": "Mercedes-Benz G-Class",
+            "brand": "Mercedes-Benz",
+            "price": 180000,
+            "image": "assets/images/car-12.jpg",
+            "description": "An iconic luxury SUV known for its durability, prestige, and unmistakable design."
+        },
+        {
+            "id": 13,
+            "name": "Audi Q8",
+            "brand": "Audi",
+            "price": 88000,
+            "image": "assets/images/car-13.jpg",
+            "description": "A sporty luxury SUV blending aggressive styling, technology, and premium comfort."
+        },
+        {
+            "id": 14,
+            "name": "Porsche Cayenne",
+            "brand": "Porsche",
+            "price": 94000,
+            "image": "assets/images/car-14.jpg",
+            "description": "A performance-oriented luxury SUV delivering power and day-to-day practicality."
+        },
+        {
+            "id": 15,
+            "name": "Lexus LX 600",
+            "brand": "Lexus",
+            "price": 110000,
+            "image": "assets/images/car-15.jpg",
+            "description": "A premium full-size SUV built on reliability, comfort, and strong off-road capability."
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "name": "PeakFinder",
+    "short_name": "PeakFinder",
+    "start_url": "/finalproject/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#1e6f50",
+    "icons": [
+        {
+            "src": "favicon.ico",
+            "sizes": "64x64",
+            "type": "image/x-icon"
+        }
+    ]
+}

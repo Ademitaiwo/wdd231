@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact — Aureum Motors</title>
+    <meta name="description"
+        content="Contact Aureum Motors — request info, book a test drive or ask about a vehicle." />
+    <meta name="author" content="Your Name" />
+    <meta property="og:title" content="Contact — Aureum Motors" />
+    <meta property="og:description" content="Contact us for pricing, test drives or bespoke services." />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script type="module" src="assets/js/main.js" defer></script>
+    <script type="module" src="assets/js/nav.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header container">
+        <a class="brand" href="index.html">Aureum<span class="accent">.</span></a>
+        <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vehicles.html">Vehicles</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <button id="theme-toggle-3" aria-pressed="false" title="Toggle theme">🌓</button>
+            <button id="hamburger-3" class="hamburger" aria-controls="primary-nav" aria-expanded="false"
+                aria-label="Open menu">☰</button>
+        </div>
+    </header>
+
+    <main class="container about-main">
+        <h1>Contact Aureum Motors</h1>
+        <p class="lead">Use the form below to request more information or book a private viewing.</p>
+
+        <form action="form-action.html" method="GET" class="contact-form" aria-label="Contact form">
+            <label for="name">Full name</label>
+            <input id="name" name="name" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+
+            <label for="vehicle">Vehicle of interest (optional)</label>
+            <input id="vehicle" name="vehicle" />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <div class="form-actions">
+                <button type="submit" class="btn">Send request</button>
+                <a class="btn ghost" href="index.html">Cancel</a>
+            </div>
+        </form>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+    
+            <div class="footer-brand">
+                <h2>LuxDrive Motors</h2>
+                <p>We're here to help you choose the perfect luxury vehicle.</p>
+            </div>
+    
+            <nav class="footer-nav">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vehicles.html">Vehicles</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </nav>
+    
+            <div class="footer-social">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="#" aria-label="Visit our Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="Visit our YouTube">YouTube</a></li>
+                    <li><a href="#" aria-label="Visit our LinkedIn">LinkedIn</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-info">
+                <h3>Contact</h3>
+                <p>Email: support@luxdrive.com</p>
+                <p>Phone: +1 (800) 555-0147</p>
+            </div>
+    
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> LuxDrive Motors. All rights reserved.</p>
+            <p><a class="video-link" href="YOUR-VIDEO-LINK" target="_blank">View Project Demo Video</a></p>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>

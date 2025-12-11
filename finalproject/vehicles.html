@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Vehicles — Aureum Motors</title>
+    <meta name="description" content="Browse Aureum Motors premium vehicles — specs, photos and details." />
+    <meta name="author" content="Your Name" />
+    <meta property="og:title" content="Aureum Motors — Vehicles" />
+    <meta property="og:description" content="Explore our curated selection of luxury vehicles." />
+    <meta property="og:image" content="assets/images/car-02.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script type="module" src="assets/js/main.js" defer></script>
+    <script type="module" src="assets/js/nav.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header container" role="banner">
+        <a class="brand" href="index.html">Aureum<span class="accent">.</span></a>
+        <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vehicles.html" aria-current="page">Vehicles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <button id="theme-toggle-2" aria-pressed="false" title="Toggle theme">🌓</button>
+            <button id="hamburger-2" class="hamburger" aria-controls="primary-nav" aria-expanded="false"
+                aria-label="Open menu">☰</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="controls" aria-label="Gallery controls">
+            <div class="search-wrap">
+                <label for="search" class="label">Search</label>
+                <input id="search" type="search" placeholder="search model, trim, year..." />
+            </div>
+
+            <div class="filters">
+                <label for="category" class="label">Body</label>
+                <select id="category" aria-label="Filter by body type">
+                    <option value="all">All</option>
+                    <option value="Sedan">Sedan</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Coupe">Coupe</option>
+                    <option value="Convertible">Convertible</option>
+                </select>
+
+                <label for="sort" class="label">Sort</label>
+                <select id="sort" aria-label="Sort vehicles">
+                    <option value="featured">Featured</option>
+                    <option value="year-desc">Year (new → old)</option>
+                    <option value="price-asc">Price (low → high)</option>
+                    <option value="price-desc">Price (high → low)</option>
+                </select>
+            </div>
+        </section>
+
+        <div id="status" class="status" aria-live="polite"></div>
+
+        <section id="gallery" class="grid-list" aria-live="polite"></section>
+
+        <nav id="pagination" class="pagination" aria-label="Pagination"></nav>
+    </main>
+    
+
+    <footer class="site-footer">
+        <div class="footer-container">
+    
+            <div class="footer-brand">
+                <h2>LuxDrive Motors</h2>
+                <p>Explore our exclusive lineup of premium vehicles engineered with precision.</p>
+            </div>
+    
+            <nav class="footer-nav">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="vehicles.html">Vehicles</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+            </nav>
+    
+            <div class="footer-social">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="#" aria-label="Visit our Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="Visit our YouTube">YouTube</a></li>
+                    <li><a href="#" aria-label="Visit our LinkedIn">LinkedIn</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-info">
+                <h3>Contact</h3>
+                <p>Email: vehicles@luxdrive.com</p>
+                <p>Phone: +1 (800) 555-0147</p>
+            </div>
+    
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> LuxDrive Motors. All rights reserved.</p>
+            <p><a class="video-link" href="YOUR-VIDEO-LINK" target="_blank">View Project Demo Video</a></p>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
